@@ -151,6 +151,7 @@ ul {
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+    margin-top: 20px;
 }
 
 .button-draw img {
@@ -159,4 +160,19 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Botón de reinicio */
+.button-container #reiniciar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: rgba(83, 83, 233, 0.741);
+    font-size: 16px;
+}
+
+.button-container #reiniciar:hover {
+    background-color: rgb(83, 83, 233);
 }
