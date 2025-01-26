@@ -8,7 +8,7 @@
 
 - Agregar Nombres: Los usuarios pueden escribir el nombre de un amigo en un campo de texto y agregarlo a una lista visible.
 
-- Validación de Entrada: Se valida que los nombres no estén vacíos y no sean solo números, mostrando alertas si la entrada no es válida.
+- Validación de Entrada: Se valida que los nombres no estén vacíos, mostrando alertas si la entrada no es válida.
   
 - Visualizar la Lista: Los nombres de los amigos se muestran en una lista debajo del campo de entrada.
 
