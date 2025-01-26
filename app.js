@@ -47,12 +47,36 @@ function sorteoAmigo(){
         alert("No hay amigos registrados");
         return;
     }
-    else{
-        // Seleccionar un nombre aleatorio
-        let amigoSeleccionado = amigos[Math.floor(Math.random() * amigos.length)];
+    
+    // Seleccionar un nombre aleatorio
+    let amigoSeleccionado = amigos[Math.floor(Math.random() * amigos.length)];
 
-        // Mostrar el resultado
-        let resultado = document.getElementById("resultado");
-        resultado.textContent = "¡El amigo secreto es: " + amigoSeleccionado + "!";
-    }
+    // Mostrar el resultado
+    let resultado = document.getElementById("resultado");
+    resultado.textContent = `¡El amigo secreto es ${amigoSeleccionado} !`;
+
+    // Ocultar la lista de amigos
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.style.display = 'none';
+
+    // Mostrar el botón para reiniciar el sorteo
+    let botonReiniciar = document.getElementById("reiniciar");
+    botonReiniciar.style.display = 'block'; // Hacer visible el botón de reinicio
+}
+
+// Función para reiniciar el sorteo
+function reiniciarSorteo() {
+    // Limpiar la lista de amigos y el resultado del sorteo
+    amigos = [];
+    let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = '';
+    let resultado = document.getElementById("resultado");
+    resultado.textContent = '';
+
+    // Mostrar la lista de amigos nuevamente
+    listaAmigos.style.display = 'block';
+
+    // Ocultar el botón de reinicio
+    let botonReiniciar = document.getElementById("reiniciar");
+    botonReiniciar.style.display = 'none';
 }
