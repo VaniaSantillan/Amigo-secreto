@@ -51,9 +51,9 @@ function sorteoAmigo(){
     // Seleccionar un nombre aleatorio
     let amigoSeleccionado = amigos[Math.floor(Math.random() * amigos.length)];
 
-    // Mostrar el resultado
-    let resultado = document.getElementById("resultado");
-    resultado.textContent = `¡El amigo secreto es ${amigoSeleccionado} !`;
+   // Mostrar el resultado
+   let resultado = document.getElementById("resultado");
+   resultado.textContent = "¡El amigo secreto es: " + amigoSeleccionado + "!";
 
     // Ocultar la lista de amigos
     let listaAmigos = document.getElementById("listaAmigos");
